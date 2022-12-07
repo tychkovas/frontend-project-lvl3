@@ -1,0 +1,24 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "rss aggregator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tychkovas/frontend-project-lvl3.git"
+  },
+  "keywords": [
+    "rss",
+    "frontend",
+    "hexlet"
+  ],
+  "author": "Aleksandr Tychkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tychkovas/frontend-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/tychkovas/frontend-project-lvl3#readme"
+}
