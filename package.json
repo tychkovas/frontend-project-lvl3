@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/tychkovas/frontend-project-lvl3/issues"
   },
-  "homepage": "https://github.com/tychkovas/frontend-project-lvl3#readme"
+  "homepage": "https://github.com/tychkovas/frontend-project-lvl3#readme",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
 }
