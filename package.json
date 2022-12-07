@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
+    "lint": "eslint . --ext .ts",
     "start:dev": "npx nodemon",
     "start": "npm run build && node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +27,9 @@
   "homepage": "https://github.com/tychkovas/frontend-project-lvl3#readme",
   "devDependencies": {
     "@types/node": "^18.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "eslint": "^8.29.0",
     "nodemon": "^2.0.20",
     "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
