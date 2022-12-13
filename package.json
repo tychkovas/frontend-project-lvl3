@@ -2,9 +2,10 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "rss aggregator",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "build": "rimraf ./build && tsc",
+    "build-webpack": "webpack",
     "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "start:dev": "npx nodemon",
