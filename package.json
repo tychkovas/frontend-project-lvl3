@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "rss aggregator",
   "private": true,
-  "scripts": {
-    "build": "rimraf ./build && tsc",
+ "scripts": {
+    "build:ts": "rimraf ./build && tsc",
+    "build": "webpack --mode=production --node-env=production",
     "build-webpack": "webpack",
     "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "start:dev": "npx nodemon",
     "start": "npm run build && node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
   },
   "repository": {
     "type": "git",
