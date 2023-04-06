@@ -1,16 +1,23 @@
+'use strict'
+
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
 const config = {
+  // mode: process.env.NODE_ENV || 'development',
   entry: './src/index.ts',
   output: {
+    // filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
     open: true,
     host: 'localhost'
+    // static: path.resolve(__dirname, 'dist'),
+    // port: 8080,
+    // hot: true
   },
   plugins: [
     new HtmlWebpackPlugin({
