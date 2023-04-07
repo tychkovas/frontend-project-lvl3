@@ -14,9 +14,23 @@
   ],
   "rules": {
     "no-console": 1,       // Means warning
-    "prettier/prettier": 2 // Means error
+    "prettier/prettier": 2, // Means error
+    "import/extensions": 0
   },
   "env": {
     "browser": true
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": ["tsconfig.json", "package/tsconfig.json"]
+      },
+      "node": {
+        "project": ["tsconfig.json", "package/tsconfig.json"]
+      }
+    }
   }
 }
